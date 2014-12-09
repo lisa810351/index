@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+}
+</style>
+</head>
+
+<body>
+	
+    
+<script type = "text/javascript">
+function AlertIt(){
+	//亂數 var
+	 myrandom = Math.round(Math.random()*2)
+	//一些白痴的話用矩陣
+	var messages=new Array()
+	messages[0]="你很無聊嗎"
+	messages[1]="乾我屁事"
+	messages[2]="想看片嗎"
+	messages[3]="求我啊"
+	
+	var links = new Array()
+	links[0] = "乾我屁事"
+	links[1] = "求我啊"
+	links[2] = "https://www.youtube.com/?gl=TW&hl=zh-tw"
+	
+	//呼叫確認視窗
+	var answer = confirm(messages[0])
+	if(answer){
+		window.location = links [0]
+		
+	}
+	var answer = confirm(messages[1])
+	if(answer){
+		window.location = links [1]
+		
+	}
+	var answer = confirm(messages[2])
+	if(answer){
+		window.location = links [2]
+		
+	}
+	var answer = confirm(messages[3])
+	if(answer){
+		window.location = links [2]
+		
+	}
+	//
+}
+</script>
+
+<table width="100%"height="100%" border="0"cellspacing="0"cellpadding="0">
+  <tr>
+    <td align ="center"valign="middle"><a href="javascript:AlertIt();"><img src="MAN.gif"width="50%"height="auto"><p></p></a></td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
